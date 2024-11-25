@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
-    <link rel="stylesheet" href="/css/store.css">
-    <link rel="stylesheet" href="/css/BASE.css">
-    <link rel="stylesheet" href="/css/HEADER.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BASE.css">
+    <link rel="stylesheet" href="../css/HEADER.css">
+    <link rel="stylesheet" href="../css/GRID.css">
 </head>
 <body>
-    <header>
-        <!-- generate header here -->
-    </header>
+    <header></header>
     <div class="container">
-        <div class="content">
-            Hello, World!
+        <div class="content-override">
+            <div class="grid-container">
+
+                <div class="grid-item" style="outline: black solid 1px;">
+                    <img src="/media/sjd/4K_Camera_Setup.png" alt="" style="width: 200px;">
+                    <div class="info">
+                        <h4><b id="name">NAME HERE</b></h4>
+                        <p id="price">PRICE HERE</p>
+                        <p id="ref">REF HERE</p>
+                        <div class="buttons">
+                            <button id="add">Add to cart</button>
+                            <button id="info">More info</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <script type="module" src="/js/store.js"></script>
+    <script type="module" src="../js/store.js"></script>
 </body>
 </html>

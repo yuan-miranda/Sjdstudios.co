@@ -1,0 +1,27 @@
+.grid-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    /* place-items: center; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: viewport;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    max-width: 500px;
+    max-height: calc(max-width 9/6);
+    aspect-ratio: 9/6;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+}
+
+.grid-item img {
+    width: 100%;
+    object-fit:cover;
+    border-radius: 4px 4px 0 0;
+}

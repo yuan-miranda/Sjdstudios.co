@@ -9,16 +9,26 @@ html {
 }
 
 .container {
-    margin-top: 100px;
-
-    width: 100vw;
-    height: 100vh;
+    margin-top: 50px;
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: #F4F3F2;
 }
 
-.content {
-    max-width: 1500px;
+/* .content {
+    max-width: 1140px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
