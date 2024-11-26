@@ -294,21 +294,21 @@ export function generateBookItems() {
                 <img src="${image}" alt="" style="width: 100px;>
                 <h4><b class="itemName">${itemName}</b></h4>
                 <p class="itemPrice">₱${itemPrice} per day</p>
-                <p class="itemReference">${itemReference}</p>
+                <p class="itemReference">Reference: ${itemReference}</p>
             </div>
             <div class="info">
                 <h4>Booking Information</h4>
-                <p class="name">${name}</p>
-                <p class="contact">${contact}</p>
-                <p class="email">${email}</p>
-                <p class="address">${address}</p>
-                <p class="paymentMethod">${paymentMethod}</p>
-                <p class="country">${country}</p>
-                <p class="province">${province}</p>
-                <p class="city">${city}</p>
-                <p class="dateStart">${dateStart}</p>
-                <p class="dateEnd">${dateEnd}</p>
-                <p class="totalCost">${totalCost}</p>
+                <p class="name">Name: ${name}</p>
+                <p class="contact">Contact: ${contact}</p>
+                <p class="email">Email: ${email}</p>
+                <p class="address">Address: ${address}</p>
+                <p class="paymentMethod">Payment Method: ${paymentMethod}</p>
+                <p class="country">Country: ${country}</p>
+                <p class="province">Province: ${province}</p>
+                <p class="city">City: ${city}</p>
+                <p class="dateStart">Start Date: ${dateStart}</p>
+                <p class="dateEnd">End Date: ${dateEnd}</p>
+                <p class="totalCost">Total Cost: ${totalCost}</p>
             </div>
             <div class="buttons">
                 <button class="extendBookingButton">Extend Booking</button>

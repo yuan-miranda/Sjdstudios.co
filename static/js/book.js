@@ -29,6 +29,48 @@ function bookButtonListener() {
         const totalCostElement = document.getElementById("totalPrice");
         const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
 
+        // focus on error
+        if (!nameInput.value) {
+            nameInput.focus();
+            return;
+        }
+        if (!contactInput.value) {
+            contactInput.focus();
+            return;
+        }
+        if (!emailInput.value) {
+            emailInput.focus();
+            return;
+        }
+        if (!addressInput.value) {
+            addressInput.focus();
+            return;
+        }
+        if (!paymentMethodDropdown.value) {
+            paymentMethodDropdown.focus();
+            return;
+        }
+        if (!countryDropdown.value) {
+            countryDropdown.focus();
+            return;
+        }
+        if (!provinceDropdown.value) {
+            provinceDropdown.focus();
+            return;
+        }
+        if (!cityDropdown.value) {
+            cityDropdown.focus();
+            return;
+        }
+        if (!dateStart.value) {
+            dateStart.focus();
+            return;
+        }
+        if (!dateEnd.value) {
+            dateEnd.focus();
+            return;
+        }
+
         // save to local storage (bookings)
         const booking = {
             name: nameInput.value,
