@@ -20,6 +20,7 @@ function generateDetails() {
             <h3>₱${price} per day</h3>
             <p>${description}</p>
             <button>Add to Cart</button>
+            <button type="button" onclick="window.history.back()">Cancel</button>
         </div>
     `;
 
