@@ -1,0 +1,72 @@
+.grid-item .info {
+    margin-bottom: 16px;
+}
+
+.grid-item .info img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 4px;
+}
+
+.grid-item h4 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333;
+    text-align: center;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 4px 0;
+    text-align: center;
+}
+
+.grid-item .itemPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Buttons */
+.grid-item .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+
+.grid-item .buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item .buttons .extendBookingButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.grid-item .buttons .extendBookingButton:hover {
+    background-color: #218838;
+}
+
+.grid-item .buttons .moreInfoButton {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.grid-item .buttons .moreInfoButton:hover {
+    background-color: #138496;
+}
+
+.grid-item .buttons .removeBookingButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.grid-item .buttons .removeBookingButton:hover {
+    background-color: #c82333;
+}
