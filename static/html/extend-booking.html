@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/BASE.css">
+    <link rel="stylesheet" href="../css/HEADER.css">
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="content">
+            <form>
+                <h1>SET DATE</h1>
+                <div class="item-selected">
+                    <img src="../../media/item.png" alt="" id="itemImage">
+                    <div class="item-information">
+                        <h2 id="itemName"></h2>
+                        <div class="item-date-modifier">
+                            <!-- old date -->
+                            <label for="oldDate">Old Date:</label>
+                            <input type="date" id="oldDate" name="oldDate" readonly>
+                            <!-- date starting -->
+                            <label for="dateStart">New Date:</label>
+                            <input type="date" id="dateStart" name="dateStart" onchange="updateTotalCost()">
+                            <!-- date ending -->
+                            <label for="dateEnd">End Date:</label>
+                            <input type="date" id="dateEnd" name="dateEnd" onchange="updateTotalCost()">
+                        </div>
+                        <p id="itemCost"></p>
+                        <p id="totalCost"></p>
+                    </div>
+                </div>
+                <!-- <div class="buttons">
+                    <button class="button" id="extendButton">Extend</button>
+                    <button class="button" onclick="window.history.back()">Cancel</button>
+                </div> -->
+
+                <!-- order summary -->
+                <div class="order-summary">
+                    <h2>Summary</h2>
+                    <div class="order-list-container">
+                        <!-- order list -->
+                    </div>
+                    <div class="total-box">
+                        <h2 id="totalPrice">Total: PHP 0</h2>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" id="submitButton">Checkout</button>
+                    <button type="reset" id="resetButton">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/DROPDOWNLOC.js"></script>
+    <!-- <script type="module" src="../js/book.js"></script> -->
+    <script type="module" src="../js/extend-booking.js"></script>
+</body>
+</html>

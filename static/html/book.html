@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/BASE.css">
+    <link rel="stylesheet" href="../css/HEADER.css">
 </head>
 <body>
-    
+    <header></header>
+    <div class="container">
+        <div class="content">
+            <form>
+                <h1>SET DATE</h1>
+                <div class="item-selected">
+                    <img src="../../media/item.png" alt="" id="itemImage">
+                    <div class="item-information">
+                        <h2 id="itemName"></h2>
+                        <div class="item-date-modifier">
+                            <!-- old date -->
+                            <label for="oldDate">Old Date:</label>
+                            <input type="date" id="oldDate" name="oldDate" readonly>
+                            <!-- date starting -->
+                            <label for="dateStart">New Date:</label>
+                            <input type="date" id="dateStart" name="dateStart" onchange="updateTotalCost()">
+                            <!-- date ending -->
+                            <label for="dateEnd">End Date:</label>
+                            <input type="date" id="dateEnd" name="dateEnd" onchange="updateTotalCost()">
+                        </div>
+                        <p id="itemCost"></p>
+                        <p id="totalCost"></p>
+                    </div>
+                </div>
+                <!-- <div class="buttons">
+                    <button class="button" id="extendButton">Extend</button>
+                    <button class="button" onclick="window.history.back()">Cancel</button>
+                </div> -->
+
+                <h1 style="margin-top: 50px;">ORDER INFORMATION</h1>
+                <!-- name -->
+                <div class="name-box">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" name="name" placeholder="Name" id="nameInput" required>
+                    <p id="nameInputErrorText" style="color: red"></p>
+                </div>
+
+                <!-- contact number TEMP -->
+                <div class="contact-box">
+                    <label for="contact">Contact Number</label><br>
+                    <input type="text" name="contact" placeholder="Contact Number" id="contactInput" required>
+                    <p id="contactInputErrorText" style="color: red"></p>
+                </div>
+                
+
+                <!-- email (optional) -->
+                <div class="email-box">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="Email" id="emailInput" required>
+                    <p id="emailInputErrorText" style="color: red"></p>
+                </div>
+                
+                <!-- location -->
+                <div class="cascading-location-dropdown">
+                    <label for="countryDropdown">Country</label><br>
+                    <select id="countryDropdown" onchange="updateProvinces()" required>
+                      <option value="">Select Country</option>
+                      <option value="Philippines">Philippines</option>
+                    </select>
+                    <p id="countryDropdownErrorText" style="color: red"></p>
+                  
+                    <label for="provinceDropdown">Province</label><br>
+                    <select id="provinceDropdown" onchange="updateCities()" required>
+                      <option value="">Select Province</option>
+                    </select>
+                    <p id="provinceDropdownErrorText" style="color: red"></p>
+                  
+                    <label for="cityDropdown">City</label><br>
+                    <select id="cityDropdown" required>
+                      <option value="">Select City</option>
+                    </select>
+                    <p id="cityDropdownErrorText" style="color: red"></p>
+                </div>
+
+                <!-- address -->
+                <div class="address-box">
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" placeholder="Address" id="addressInput" required>
+                    <p id="addressInputErrorText" style="color: red"></p>
+                </div>
+
+                <!-- payment method -->
+                <div class="payment-dropdown">
+                    <label for="paymentMethod">Payment Method (Required)</label><br>
+                    <select name="paymentMethod" id="paymentMethodDropdown" required>
+                        <option value="cod">Cash On Delivery (COD)</option>
+                        <option value="gcash">GCash</option>
+                    </select>
+                </div>
+
+                <!-- order summary -->
+                <div class="order-summary">
+                    <h2>Summary</h2>
+                    <div class="order-list-container">
+                        <!-- order list -->
+                    </div>
+                    <div class="total-box">
+                        <h2 id="totalPrice">Total: PHP 0</h2>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" id="submitButton">Checkout</button>
+                    <button type="reset" id="resetButton">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/DROPDOWNLOC.js"></script>
+    <script type="module" src="../js/book.js"></script>
 </body>
 </html>

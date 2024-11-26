@@ -26,12 +26,12 @@ exports.initDb = async () => {
         )`,
         equipments: `CREATE TABLE IF NOT EXISTS equipments (
             id SERIAL PRIMARY KEY,
-            reference TEXT NOT NULL UNIQUE,
             name TEXT NOT NULL,
             description TEXT,
             image TEXT,
             price DECIMAL(10, 2) NOT NULL,
             category TEXT NOT NULL,
+            reference TEXT NOT NULL UNIQUE,
             stock INT NOT NULL,
             date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             date_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

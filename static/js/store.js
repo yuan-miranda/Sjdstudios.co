@@ -7,101 +7,135 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadHeaderTo();
     const values = [
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
+            id: 1,
             name: "Camera Setup 1",
-            price: "$1000",
-            ref: "REF001"
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 1000,
+            category: "Camera",
+            reference: "REF001",
+            stock: 10,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
+            id: 2,
             name: "Camera Setup 2",
-            price: "$1200",
-            ref: "REF002"
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 2000,
+            category: "Camera",
+            reference: "REF002",
+            stock: 20,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
+            id: 3,
             name: "Camera Setup 3",
-            price: "$1500",
-            ref: "REF003"
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 3000,
+            category: "Camera",
+            reference: "REF003",
+            stock: 30,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
+            id: 4,
             name: "Camera Setup 4",
-            price: "$1800",
-            ref: "REF004"
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 4000,
+            category: "Camera",
+            reference: "REF004",
+            stock: 40,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 1",
-            price: "$1000",
-            ref: "REF001"
+            id: 5,
+            name: "Camera Setup 5",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 5000,
+            category: "Camera",
+            reference: "REF005",
+            stock: 50,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 2",
-            price: "$1200",
-            ref: "REF002"
+            id: 6,
+            name: "Camera Setup 6",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 6000,
+            category: "Camera",
+            reference: "REF006",
+            stock: 60,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 3",
-            price: "$1500",
-            ref: "REF003"
+            id: 7,
+            name: "Camera Setup 7",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 7000,
+            category: "Camera",
+            reference: "REF007",
+            stock: 70,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 4",
-            price: "$1800",
-            ref: "REF004"
+            id: 8,
+            name: "Camera Setup 8",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 8000,
+            category: "Camera",
+            reference: "REF008",
+            stock: 80,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 1",
-            price: "$1000",
-            ref: "REF001"
+            id: 9,
+            name: "Camera Setup 9",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 9000,
+            category: "Camera",
+            reference: "REF009",
+            stock: 90,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
         {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 2",
-            price: "$1200",
-            ref: "REF002"
+            id: 10,
+            name: "Camera Setup 10",
+            description: "This is a camera setup",
+            image: "/media/sjd/4K_Camera_Setup.png",
+            price: 10000,
+            category: "Camera",
+            reference: "REF010",
+            stock: 100,
+            date_created: "2021-10-01",
+            date_updated: "2021-10-01",
+            date_deleted: null
         },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 3",
-            price: "$1500",
-            ref: "REF003"
-        },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 4",
-            price: "$1800",
-            ref: "REF004"
-        },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 1",
-            price: "$1000",
-            ref: "REF001"
-        },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 2",
-            price: "$1200",
-            ref: "REF002"
-        },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 3",
-            price: "$1500",
-            ref: "REF003"
-        },
-        {
-            img: "/media/sjd/4K_Camera_Setup.png",
-            name: "Camera Setup 4",
-            price: "$1800",
-            ref: "REF004"
-        }
     ]
     generateGridItems(values.length, values);
 });

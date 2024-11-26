@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/BASE.css">
+    <link rel="stylesheet" href="../css/HEADER.css">
 </head>
 <body>
-    
+    <header></header>
+    <div class="container">
+        <div class="content">
+            <!-- <form action="/login" method="POST"> -->
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <button type="submit" id="login-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="../js/login.js"></script>
 </body>
 </html>
